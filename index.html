@@ -5,24 +5,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
-    <style>
+    <style type="text/css">
     * {
       box-sizing: border-box;
       padding: 0;
       margin: 0;
     }
+    body {
+      overflow-x: hidden;
+    }
     h1, h2 {
       text-align: center;
     }
+    section.welcome > h1 {
+      font-size: 64px; 
+      margin-bottom: 20px;
+    }
+    section.welcome > p {
+      font-size: 24px; 
+      margin-bottom: 20px;
+    }
+    h2 {
+      margin-bottom: 20px;
+      font-size: 32px;
+    }
     nav {
       width: 70vw;
-      padding: 50px;
+    }
+    a {
+      text-decoration: none;
+      color: #c20030;
+
+    }
+    a:hover {
+      color: #ee7c99;
     }
     .nav-container {
       display: flex;
       justify-content: space-between;
       align-items: center;
       border-bottom: solid black 1px;
+      padding-top: 20px;
+      padding-bottom: 10px;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    .nav-logo {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      align-items: center;
+    }
+    div.nav-logo h1 {
+      font-size: 32px;
+    }
+    .nav-links {
+      display: flex;
+      gap: 50px;
+    font-size: 24px;
     }
     .welcome {
       display: flex;
@@ -39,6 +79,10 @@
     .members-card {
       list-style-type: none;
       border: solid black 1px;
+      border-radius: 10px;
+    }
+    li.members-card img {
+      border-radius: 10px 10px 0 0;
     }
     .albums {
       display: flex;
@@ -75,22 +119,22 @@
   </head>
   <body style="background-color:#9fb8d2;display:flex;gap:50px;flex-direction:column;justify-content:center;align-items:center">
 
-    <nav>
-      <div class="nav-container">
+    <nav class="nav-container">
+      <div class="nav-logo">
         <img src="this_logo_newjeans.png" alt="logo" width="80" height="80">
-        <div>
+        <h1>NewJeans</h1>
+      </div>
+      <div class="nav-links">
         <a href="gallery.html">Gallery</a>
-        <a href="gallery.html">Link</a>
-        <a href="gallery.html">Link</a>
-        </div>
+        <a href="members.html">Members</a>
       </div>
     </nav>
 
     <section class="welcome">
       <h1>Welcome to NewJeans!</h1>
-      <p>Welcome Bunnies! to the <span style="color:pink;font-size:24px"><b><i>NewJeans</i></b></span> Fandom wiki site, an unofficial encyclopedia on ADOR's first girl group, NewJeans.</p>
+      <p>Welcome Bunnies! to the <span style="color:#c20030;font-size:24px"><b><i>NewJeans</i></b></span> Fandom wiki site, an unofficial encyclopedia on ADOR's first girl group, NewJeans.</p>
       <blockquote cite="https://en.wikipedia.org/wiki/NewJeans" style="text-align:center;width:75vw">
-        NewJeans (Korean: 뉴진스; RR: Nyujinseu) is a South Korean girl group formed by ADOR. The group is composed of five members: Minji, Hanni, Danielle, Haerin, and Hyein. NewJeans is known for their girl next door image and 1990s- and 2000s-indebted pop and R&B songs with influences of various dance and club styles. 
+        <strong>NewJeans (Korean: 뉴진스; RR: Nyujinseu)</strong> is a South Korean girl group formed by ADOR. The group is composed of five members: Minji, Hanni, Danielle, Haerin, and Hyein. NewJeans is known for their girl next door image and 1990s- and 2000s-indebted pop and R&B songs with influences of various dance and club styles. 
       </blockquote>
     </section>
 
@@ -160,5 +204,9 @@
       <p>HYBE Entertainment Building is the Parent Company of ADOR. Where NewJeans was Born!</p>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12656.013435435476!2d126.9544415118102!3d37.53141810275977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca1adbde4193d%3A0xb66b720a6871a40a!2sHYBE%20HQ!5e0!3m2!1sen!2sph!4v1701776787664!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
+
+    <footer style="background-color:#c20030;color:white;padding:20px;text-align:center;width:100vw">
+      <p>© 2023 NewJeans Fandom Wiki</p>
+    </footer>
   </body>
 </html>
