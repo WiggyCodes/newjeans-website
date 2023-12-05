@@ -4,7 +4,9 @@
     <title>NewJeans</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
     <style type="text/css">
     * {
       box-sizing: border-box;
@@ -13,6 +15,12 @@
     }
     body {
       overflow-x: hidden;
+      background-color: #9fb8d2;
+      display: flex;
+      gap: 80px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
     h1, h2 {
       text-align: center;
@@ -32,13 +40,15 @@
     nav {
       width: 70vw;
     }
-    a {
+    div.nav-links > a {
       text-decoration: none;
       color: #c20030;
-
     }
-    a:hover {
+    div.nav-links > a:hover {
       color: #ee7c99;
+    }
+    div.nav-links > a:active {
+      color: #66023c;
     }
     .nav-container {
       display: flex;
@@ -56,13 +66,18 @@
       justify-content: center;
       align-items: center;
     }
-    div.nav-logo h1 {
+    div.nav-logo > a > h1 {
       font-size: 32px;
+    }
+    div.nav-logo > a {
+      text-decoration: none;
+      color: black;
     }
     .nav-links {
       display: flex;
       gap: 50px;
-    font-size: 24px;
+      font-size: 26px;
+      font-family: 'Irish Grover', cursive;
     }
     .welcome {
       display: flex;
@@ -83,6 +98,12 @@
     }
     li.members-card img {
       border-radius: 10px 10px 0 0;
+    }
+    li.members-card p {
+      font-size: 18px;
+      font-family: Roboto, sans-serif;
+      font-style: normal;
+      font-weight: 800;
     }
     .albums {
       display: flex;
@@ -117,14 +138,17 @@
     }
     </style>
   </head>
-  <body style="background-color:#9fb8d2;display:flex;gap:50px;flex-direction:column;justify-content:center;align-items:center">
+  <body>
 
     <nav class="nav-container">
       <div class="nav-logo">
-        <img src="this_logo_newjeans.png" alt="logo" width="80" height="80">
-        <h1>NewJeans</h1>
+        <a href="index.html" class="nav-logo">
+          <img src="this_logo_newjeans.png" alt="logo" width="80" height="80">
+          <h1>NewJeans</h1>
+        </a>
       </div>
       <div class="nav-links">
+        <a href="index.html">Home</a>
         <a href="gallery.html">Gallery</a>
         <a href="members.html">Members</a>
       </div>
