@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title> NewJeans Gallery </title>
+    <title>Gallery | NewJeans</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,26 +13,207 @@
         padding: 0;
         margin: 0;
       }
+      body {
+        overflow-x: hidden;
+        background-color: #9fb8d2;
+        display: flex;
+        gap: 80px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      nav {
+        width: 70vw;
+      }
+      div.nav-links > a {
+        text-decoration: none;
+        color: #c20030;
+      }
+      div.nav-links > a:hover {
+        color: #ee7c99;
+      }
+      div.nav-links > a:active {
+        color: #66023c;
+      }
+      .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: solid black 1px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+      .nav-logo {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+      }
+      div.nav-logo > a > h1 {
+        font-size: 32px;
+      }
+      div.nav-logo > a {
+        text-decoration: none;
+        color: black;
+      }
+      .nav-links {
+        display: flex;
+        gap: 50px;
+        font-size: 26px;
+        font-family: 'Irish Grover', cursive;
+      }
+      .table-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      img {
+        width: 350px;
+        height: 300px;
+        padding: 10px 10px 20px 10px;
+        object-fit: cover;
+        border: 1px solid #BFBFBF;
+        background-color: pink;
+        border-radius: 10px;
+        box-shadow: 10px 10px 5px rgba(0, 0, 255, 0.4);
+      }
     </style>
   </head>
   <body>
-    <h1>GALLERY</h1>
+
+    <!-- Nav bar -->
     <nav class="nav-container">
       <div class="nav-logo">
         <a href="index.html" class="nav-logo">
-          <img src="gallery logo removed.png" alt="logo" width="80" height="80">
+          <img src="pictures/this_logo_newjeans.png" alt="logo" width="80" height="80">
           <h1>NewJeans</h1>
         </a>
       </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="members.html">Members</a>
+      </div>
+    </nav>
 
-<section class="Welcome gallery">
-<h2>Gallery</h2>
-<p>Welcome Bunnies! to the NewJeans <span style="color:#c20030;font-size:24px"><b><i>Gallery!</i></b></span></p>
-  <div class="gallery-card>"
-  <img src="ETA 1.webp" alt="ETA #1" width="200" height="200">
-  <p style="text-align:center">ETA #1</p>
-  </div>
+    <section>
+      <h1>GALLERY</h1>
+      <p>Welcome Bunnies! to the NewJeans <span style="color:#c20030;font-size:24px"><b><i>Gallery!</i></b></span></p>
+    </section>
 
-</section>
+    <section class="table-container">
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              <img src="pictures/gallery/ETA_1.webp" alt="ETA1">
+              <p style="text-align:center">ETA #1</p>
+            </td>
+            <td>
+              <img src="pictures/gallery/ETA 2.webp" alt="ETA2">
+              <p style="text-align:center">ETA #2</p>
+            </td>
+            <td>
+              <img src="pictures/gallery/ETA 3.webp" alt="ETA3">
+              <p style="text-align:center">ETA #3</p>
+            </td>
+            <td>
+              <img src="pictures/gallery/ETA 4.webp" alt="ETA4">
+              <p style="text-align:center">ETA #4</p>
+            </td>
+            <td>
+              <img src="pictures/gallery/ETA 5.webp" alt="ETA5">
+              <p style="text-align:center">ETA #5</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="pictures/gallery/ETA 6.webp" alt="ETA6">
+              <p style="text-align:center">ETA #6</p>
+            <td>
+              <img src="pictures/gallery/ETA 7.webp" alt="ETA7">
+              <p style="text-align:center">ETA #7</p>
+            <td>
+              <img src="pictures/gallery/ETA 8.webp" alt="ETA8">
+              <p style="text-align:center">ETA #8</p>
+            <td>
+              <img src="pictures/gallery/ETA 9.webp" alt="ETA9">
+              <p style="text-align:center">ETA #9</p>
+            <td>
+              <img src="pictures/gallery/ETA 10.webp" alt="ETA10">
+              <p style="text-align:center">ETA #10</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="pictures/gallery/GU 1.webp" alt="GETUP1">
+              <p style="text-align:center">GU #1</p>
+            </td>
+            <td>
+              <img src="pictures/gallery/GU 2.webp" alt="GETUP2">
+              <p style="text-align:center">GU #2</p>
+            </td>
+            <td>
+              <img src="pictures/gallery/GU 3.webp" alt="GETUP3">
+              <p style="text-align:center">GU #3</p>
+            </td>
+            <td>
+              <img src="pictures/gallery/GU 4.webp" alt="GETUP4">
+              <p style="text-align:center">GU #4</p>
+            </td>
+            <td>
+              <img src="pictures/gallery/OMG 9.webp" alt="OMG9">
+              <p style="text-align:center">OMG #9</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="pictures/gallery/SS 1.webp" alt="SS1">
+              <p style="text-align:center">SS #1</p>
+            </td>
+            <td>
+              <img src="pictures/gallery/SS 2.webp" alt="SS2">
+              <p style="text-align:center">SS #2</p>
+            </td>
+            <td>
+              <img src="pictures/gallery/SS 3.webp" alt="SS3">
+              <p style="text-align:center">SS #3</p>
+            </td>
+            <td>
+              <img src="pictures/gallery/SS 4.webp" alt="SS4">
+              <p style="text-align:center">SS #4</p>
+            </td>
+            <td>
+              <img src="pictures/gallery/SS 5.webp" alt="SS5">
+              <p style="text-align:center">SS #5</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="pictures/gallery/SS 6.webp" alt="SS6">
+              <p style="text-align:center">SS #6</p>
+            </td>
+            <td>
+              <img src="pictures/gallery/SS 7.webp" alt="SS7">
+              <p style="text-align:center">SS #7</p>
+            </td>
+            <td>
+              <img src="pictures/gallery/ZERO.webp" alt="ZERO">
+              <p style="text-align:center">ZERO</p>
+            </td>
+            <td>
+              <img src="pictures/gallery/DITTO 15.webp" alt="DITTO15">
+              <p style="text-align:center">DITTO #15</p>
+            </td>
+            <td>
+              <img src="pictures/gallery/BE_WHO_YOU_ARE.webp" alt="BE WHO YOU ARE">
+              <p style="text-align:center">BE WHO YOU ARE</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
   </body>
 </html>
